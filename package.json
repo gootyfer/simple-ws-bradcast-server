@@ -4,6 +4,6 @@
   "author": "Israel Gutiérez <israel@ironhack.com>",
   "description": "a simple websocket server for a chat",
   "dependencies" : {
-    "ws"   :  "*",
+    "ws"   :  "*"
   }
 }
