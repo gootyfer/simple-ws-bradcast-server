@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script>
+      var ws = new WebSocket('ws://localhost:3000');
+
+      ws.onopen = function() {
+          console.log('Conectado');
+          ws.send(JSON.stringify({name:"Pepe", msg:'Hola, websockets!'}));
+      };
+
+      ws.onclose = function() {
+          console.log('Desconectado');
+      };
+
+      ws.onmessage = function(e) {
+          var message = e.data;
+          //console.log('Mensaje recibido: ', message);
+          var messageObj = JSON.parse(message);
+          console.log(messageObj.name + ' dice '+messageObj.msg);
+      };
+
+      
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>
+
