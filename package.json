@@ -1,7 +1,7 @@
 {
   "name": "simple-ws-bradcast-server",
   "version": "0.0.1",
-  "author": "Israel Gutiérez <israel@ironhack.com>",
+  "author": "Israel Gutiérrez <israel@ironhack.com>",
   "description": "a simple websocket server for a chat",
   "dependencies" : {
     "ws"   :  "*"
